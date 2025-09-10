@@ -98,8 +98,8 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <Hero darkMode={darkMode} />
+      {/* Hero Section
+      <Hero darkMode={darkMode} /> */}
     </>
   );
 };
