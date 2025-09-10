@@ -82,13 +82,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               ) : (
                 // ☀️ Sun
                 <div className="relative w-6 h-6 flex items-center justify-center">
-                  <span className="w-4 h-4 border-2 border-black rounded-full"></span>
+                  <span className="w-3 h-3 border-2 border-black rounded-full"></span>
                   {[...Array(8)].map((_, i) => (
                     <span
                       key={i}
                       className="absolute w-1 h-1 bg-black rounded-full"
                       style={{
-                        transform: `rotate(${i * 45}deg) translate(14px)`,
+                        transform: `rotate(${i * 45}deg) translate(12px)`,
                       }}
                     ></span>
                   ))}
@@ -98,7 +98,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
             {/* Hamburger Button */}
             <button onClick={() => setOpen(true)} className="relative z-50">
-              <Bars3Icon className="h-8 w-8 text-black" />
+              <Bars3Icon className="h-10 w-10 text-black" />
             </button>
           </div>
         )}
@@ -111,11 +111,16 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         }`}
       >
         {/* Close Button (inside menu header) */}
-        <div className="flex justify-end p-6">
-          <button onClick={() => setOpen(false)} className="z-50">
-            <XMarkIcon className="h-8 w-8 text-black" />
-          </button>
-        </div>
+        <div className="flex justify-between items-center p-6">
+  {/* Left side text */}
+  <h1 className="text-red-500 font-bold">Menu</h1>
+
+  {/* Right side icon */}
+  <button onClick={() => setOpen(false)} className="z-50">
+    <XMarkIcon className="h-8 w-8 text-black" />
+  </button>
+</div>
+
 
         <ul className="flex flex-col px-6 py-6 space-y-6">
           {links.map((link, index) => (
