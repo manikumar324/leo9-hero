@@ -52,12 +52,12 @@ export default function Hero({ darkMode }) {
     }`}>
               Experience Design Studio
             </p>
-            <h1 className="mt-4 font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight">
-              We craft{" "}
+            <h1 className="mt-4 font-display font-extrabold text-7xl sm:text-5xl lg:text-6xl leading-tight">
+              Design{" "}<br />
               <span className="gradient-text">
-                {darkMode ? "human-centered" : "human-centered"}
-              </span>{" "}
-              digital products.
+                {darkMode ? "Transform" : "Transform"}
+              </span>{" "}<br />
+              Accelerate
             </h1>
             <p className={`mt-5 text-black my-5 max-w-xl ${darkMode ? "text-white/70" : "text-black/70"}`}>
               Strategy, product, and brand — aligned through research and design.
